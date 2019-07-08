@@ -51,10 +51,10 @@ public class DeepLinker: NSObject {
     
     public func fetchDeepLinkData(_ apiKey: String, _ callback: @escaping (_ deepLinkData: DeepLinkData) -> Void) {
         // TODO: remove when live api url is available
-        if !testMode {
-            callback(DeepLinkData(failureMessage: "This framework is not yet setup to run in a live environment."))
-            return
-        }
+        //if !testMode {
+        //    callback(DeepLinkData(failureMessage: "This framework is not yet setup to run in a live environment."))
+        //    return
+        //}
         
         guard apiKey != "" else {
             callback(DeepLinkData(failureMessage: DeepLinker.MISSING_API_KEY_ERROR))
@@ -69,7 +69,7 @@ public class DeepLinker: NSObject {
         let encodedData = try? JSONSerialization.data(withJSONObject: params, options: [])
         
         // TODO: need live api url
-        var apiUrl = ""
+        var apiUrl = "https://apistaging.urlgeni.us/api/v1/deep_links"
         if testMode {
             apiUrl = "https://apistaging.urlgeni.us/api/v1/deep_links"
         }
