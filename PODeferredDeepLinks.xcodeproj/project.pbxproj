@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0423622E22CBA9B300E819D3 /* PODeferredDeepLinksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0423622D22CBA9B300E819D3 /* PODeferredDeepLinksTests.swift */; };
+		0423623022CBA9B300E819D3 /* PODeferredDeepLinks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 042AF85022B8078800173425 /* PODeferredDeepLinks.framework */; };
+		042AF85522B8078800173425 /* PODeferredDeepLinks.h in Headers */ = {isa = PBXBuildFile; fileRef = 042AF85322B8078800173425 /* PODeferredDeepLinks.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		042AF85C22B807D600173425 /* DeepLinker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042AF85B22B807D600173425 /* DeepLinker.swift */; };
+		042AF85E22B80A9B00173425 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042AF85D22B80A9B00173425 /* Utility.swift */; };
+		042AF86022B80C8400173425 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042AF85F22B80C8400173425 /* Log.swift */; };
+		042AF86222B832A400173425 /* DeepLinkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042AF86122B832A400173425 /* DeepLinkData.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0423623122CBA9B300E819D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 042AF84722B8078800173425 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 042AF84F22B8078800173425;
+			remoteInfo = PODeferredDeepLinks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0423622B22CBA9B300E819D3 /* PODeferredDeepLinksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PODeferredDeepLinksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0423622D22CBA9B300E819D3 /* PODeferredDeepLinksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PODeferredDeepLinksTests.swift; sourceTree = "<group>"; };
+		0423622F22CBA9B300E819D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		042AF85022B8078800173425 /* PODeferredDeepLinks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PODeferredDeepLinks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		042AF85322B8078800173425 /* PODeferredDeepLinks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PODeferredDeepLinks.h; sourceTree = "<group>"; };
+		042AF85422B8078800173425 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		042AF85B22B807D600173425 /* DeepLinker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinker.swift; sourceTree = "<group>"; };
+		042AF85D22B80A9B00173425 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		042AF85F22B80C8400173425 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		042AF86122B832A400173425 /* DeepLinkData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkData.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0423622822CBA9B300E819D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0423623022CBA9B300E819D3 /* PODeferredDeepLinks.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		042AF84D22B8078800173425 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0423622C22CBA9B300E819D3 /* PODeferredDeepLinksTests */ = {
+			isa = PBXGroup;
+			children = (
+				0423622D22CBA9B300E819D3 /* PODeferredDeepLinksTests.swift */,
+				0423622F22CBA9B300E819D3 /* Info.plist */,
+			);
+			path = PODeferredDeepLinksTests;
+			sourceTree = "<group>";
+		};
+		042AF84622B8078800173425 = {
+			isa = PBXGroup;
+			children = (
+				042AF85222B8078800173425 /* PODeferredDeepLinks */,
+				0423622C22CBA9B300E819D3 /* PODeferredDeepLinksTests */,
+				042AF85122B8078800173425 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		042AF85122B8078800173425 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				042AF85022B8078800173425 /* PODeferredDeepLinks.framework */,
+				0423622B22CBA9B300E819D3 /* PODeferredDeepLinksTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		042AF85222B8078800173425 /* PODeferredDeepLinks */ = {
+			isa = PBXGroup;
+			children = (
+				042AF85322B8078800173425 /* PODeferredDeepLinks.h */,
+				042AF85422B8078800173425 /* Info.plist */,
+				042AF85B22B807D600173425 /* DeepLinker.swift */,
+				042AF86122B832A400173425 /* DeepLinkData.swift */,
+				042AF85F22B80C8400173425 /* Log.swift */,
+				042AF85D22B80A9B00173425 /* Utility.swift */,
+			);
+			path = PODeferredDeepLinks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		042AF84B22B8078800173425 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042AF85522B8078800173425 /* PODeferredDeepLinks.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0423622A22CBA9B300E819D3 /* PODeferredDeepLinksTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0423623522CBA9B300E819D3 /* Build configuration list for PBXNativeTarget "PODeferredDeepLinksTests" */;
+			buildPhases = (
+				0423622722CBA9B300E819D3 /* Sources */,
+				0423622822CBA9B300E819D3 /* Frameworks */,
+				0423622922CBA9B300E819D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0423623222CBA9B300E819D3 /* PBXTargetDependency */,
+			);
+			name = PODeferredDeepLinksTests;
+			productName = PODeferredDeepLinksTests;
+			productReference = 0423622B22CBA9B300E819D3 /* PODeferredDeepLinksTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		042AF84F22B8078800173425 /* PODeferredDeepLinks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 042AF85822B8078800173425 /* Build configuration list for PBXNativeTarget "PODeferredDeepLinks" */;
+			buildPhases = (
+				042AF84B22B8078800173425 /* Headers */,
+				042AF84C22B8078800173425 /* Sources */,
+				042AF84D22B8078800173425 /* Frameworks */,
+				042AF84E22B8078800173425 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PODeferredDeepLinks;
+			productName = PODeferredDeepLinks;
+			productReference = 042AF85022B8078800173425 /* PODeferredDeepLinks.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		042AF84722B8078800173425 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "True Development LLC";
+				TargetAttributes = {
+					0423622A22CBA9B300E819D3 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					042AF84F22B8078800173425 = {
+						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
+					};
+				};
+			};
+			buildConfigurationList = 042AF84A22B8078800173425 /* Build configuration list for PBXProject "PODeferredDeepLinks" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 042AF84622B8078800173425;
+			productRefGroup = 042AF85122B8078800173425 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				042AF84F22B8078800173425 /* PODeferredDeepLinks */,
+				0423622A22CBA9B300E819D3 /* PODeferredDeepLinksTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0423622922CBA9B300E819D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		042AF84E22B8078800173425 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0423622722CBA9B300E819D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0423622E22CBA9B300E819D3 /* PODeferredDeepLinksTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		042AF84C22B8078800173425 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042AF85E22B80A9B00173425 /* Utility.swift in Sources */,
+				042AF85C22B807D600173425 /* DeepLinker.swift in Sources */,
+				042AF86022B80C8400173425 /* Log.swift in Sources */,
+				042AF86222B832A400173425 /* DeepLinkData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0423623222CBA9B300E819D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 042AF84F22B8078800173425 /* PODeferredDeepLinks */;
+			targetProxy = 0423623122CBA9B300E819D3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0423623322CBA9B300E819D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U2X6KH7JZ2;
+				INFOPLIST_FILE = PODeferredDeepLinksTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.truedevelopment.PODeferredDeepLinksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0423623422CBA9B300E819D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U2X6KH7JZ2;
+				INFOPLIST_FILE = PODeferredDeepLinksTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.truedevelopment.PODeferredDeepLinksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		042AF85622B8078800173425 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		042AF85722B8078800173425 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		042AF85922B8078800173425 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = U2X6KH7JZ2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PODeferredDeepLinks/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.truedevelopment.PODeferredDeepLinks;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		042AF85A22B8078800173425 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = U2X6KH7JZ2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PODeferredDeepLinks/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.truedevelopment.PODeferredDeepLinks;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0423623522CBA9B300E819D3 /* Build configuration list for PBXNativeTarget "PODeferredDeepLinksTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0423623322CBA9B300E819D3 /* Debug */,
+				0423623422CBA9B300E819D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		042AF84A22B8078800173425 /* Build configuration list for PBXProject "PODeferredDeepLinks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				042AF85622B8078800173425 /* Debug */,
+				042AF85722B8078800173425 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		042AF85822B8078800173425 /* Build configuration list for PBXNativeTarget "PODeferredDeepLinks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				042AF85922B8078800173425 /* Debug */,
+				042AF85A22B8078800173425 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 042AF84722B8078800173425 /* Project object */;
+}
